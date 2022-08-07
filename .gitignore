@@ -1,0 +1,10 @@
+# https://docs.python-guide.org/writing/gotchas/#version-control-ignores
+
+# Will match .pyc, .pyo and .pyd files.
+*.py[cod]
+# Exclude the whole directory
+__pycache__/
+
+# Virtual Environment
+.venv/
+
