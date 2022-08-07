@@ -12,4 +12,12 @@ https://underdog.io/blog/python-for-javascript-developers
 
 ### [Auto-Formatting](https://docs.python-guide.org/writing/style/#auto-formatting)
 
+## [Conventions](https://docs.python-guide.org/writing/style/#conventions)
 
+
+
+
+
+### Replace If Statements with Dictionary
+
+[Using a dictionary](https://www.youtube.com/watch?v=z726s8J8HmI) instead of `if`s and `else`s creates a functional, declaritive and polymorphic coding style rather than imperative and procedural.
