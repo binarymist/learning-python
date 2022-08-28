@@ -1,9 +1,9 @@
 # [Code Style](https://docs.python-guide.org/writing/style/)
 
-First work through these:  
+Python vs JavaScript:
+
 https://www.valentinog.com/blog/python-for-js/#python-data-types-list-and-tuples  
-https://python.plainenglish.io/python-101-for-javascript-developers-e7f1987f825e?gi=2581abaf7394  
-https://underdog.io/blog/python-for-javascript-developers
+
 
 ## [PEP 8](https://docs.python-guide.org/writing/style/#pep-8)
 
@@ -17,6 +17,12 @@ https://underdog.io/blog/python-for-javascript-developers
 
 
 
+
+### Swap For loops with Functional Paradigms
+
+Todo: 
+
+https://stackoverflow.com/questions/1892324/why-program-functionally-in-python
 
 ### Replace If Statements with Dictionary
 
