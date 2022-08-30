@@ -43,7 +43,7 @@ a = 2
 
 Unlike in JavaScript where if you declare and/or define a variable anywhere without using `var`, `let` or `const` it will become global, in Python there is no prefix required and where ever you ~~declare~~ define a variable will be it's scope.
 
-In Python the concept of declaring a variable before using it doesn't exist, you just define (or assign) it (ex: `a = 1`).
+In Python the concept of declaring a variable (for built-in types) before using it doesn't exist, you just define or assign it (ex: `a = 1`). Arrays need to be defined because they are not built-in types, as can be seen in the link below "lists vs arrays".
 
 A variable which is defined inside a function is local to that function
 
@@ -59,7 +59,7 @@ _Using properly mutable types for things that are mutable in nature and immutabl
 
 [built-in types](https://www.guru99.com/mutable-and-immutable-in-python.html#9) (unless specified otherwise):
 
-* mutable: `list`, arrays (Array data structures need to be imported via NumPy package or array module), `dict`, `set`
+* mutable: `list`, arrays (Array data structures need to be imported via NumPy package or array module, so arrays are not actually built-ins), `dict`, `set`
 * immutable: [`tuple`](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences), [`int`, `float`, `complex`](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex), [`NoneType`](https://www.pythontutorial.net/advanced-python/python-none/) (`None` is a special object of the `NoneType` class), `bool`, `str`, `frozenset`
 
 [lists vs arrays](https://learnpython.com/blog/python-array-vs-list/)
