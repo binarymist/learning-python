@@ -1,4 +1,4 @@
-# [Structuring Your Project](thttps://docs.python-guide.org/writing/structure/)
+# [Structuring Your Project](https://docs.python-guide.org/writing/structure/)
 
 ## [Object-oriented programming](https://docs.python-guide.org/writing/structure/#object-oriented-programming)
 
