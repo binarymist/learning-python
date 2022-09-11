@@ -70,15 +70,12 @@ https://stackoverflow.com/questions/1892324/why-program-functionally-in-python
 
 ### Slicing Sequences
 
+Good places to start:
 
+* "Effective Python (2nd Edition) Item 11: Know How to Slice Sequences" Provides examples of slicing sequences
+* "Effective Python (2nd Edition) Item 12: Avoid Striding and Slicing in a Single Expression"
+* "Effective Python (2nd Edition) Item 13: Prefer Catch-All Unpacking Over Slicing" Which covers catch-all unpacking via starred expressions
 
-Todo: Carry on here ....... Work through all the slicing parts in Effective Pyton. Chapter 2 has several items ........................
-
-
-
-
-
-"Effective Python (2nd Edition) Item 11: Know How to Slice Sequences" Provides examples of slicing sequences.
 
 There is also the [`slice`](https://docs.python.org/3/library/functions.html#slice) built-in function which works [like so](https://www.tutorialsteacher.com/python/slice-method):
 
@@ -113,6 +110,6 @@ All of the built-in sequence types are detailed [here](https://docs.python.org/3
 
 #### Other Resources
 
-
+* [Use Cases for Asterisks](https://betterprogramming.pub/understand-the-versatility-of-asterisks-in-python-know-8-use-cases-722bff20e84c)
 
 
