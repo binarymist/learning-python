@@ -54,7 +54,7 @@ start, end = match.start(), match.end()
 
 
 
-
+## Personal
 
 The following sub-sections are personal and not part of "The Hitchhiker's Guide to Python".
 
