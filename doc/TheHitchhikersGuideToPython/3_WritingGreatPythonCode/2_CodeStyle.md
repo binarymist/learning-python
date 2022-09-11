@@ -101,7 +101,8 @@ print('List value: ', nums[portion2])
 Types that can be sliced:
 
 * `list`
-* arrays - Or custom class objects that implement sequence methods `__getitem__()` and `__len__()`. Details on slicing arrays [here](https://www.askpython.com/python/array/array-slicing-in-python)
+* arrays - Or custom class objects that implement sequence methods `__getitem__()` and `__len__()`, ideally as well as other methods from the abstract base class `Sequence` of the built-in module [`collections.abc`](https://docs.python.org/3/library/collections.abc.html), as detailed in Effective Python (2nd Edition) Item 43.
+  Details on slicing arrays [here](https://www.askpython.com/python/array/array-slicing-in-python)
 * `str`
 * `tuple`
 * `range`
