@@ -57,10 +57,10 @@ _Mutable types are not “stable”, and therefore cannot be used as dictionary 
 
 _Using properly mutable types for things that are mutable in nature and immutable types for things that are fixed in nature helps to clarify the intent of the code._
 
-[built-in types](https://www.guru99.com/mutable-and-immutable-in-python.html#9) (unless specified otherwise):
+[Built-in types](https://docs.python.org/3/library/stdtypes.html) (unless specified otherwise):
 
-* mutable: `list`, arrays (Array data structures need to be imported via NumPy package or array module, so arrays are not actually built-ins), `dict`, `set`
-* immutable: [`tuple`](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences), [`int`, `float`, `complex`](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex), [`NoneType`](https://www.pythontutorial.net/advanced-python/python-none/) (`None` is a special object of the `NoneType` class), `bool`, `str`, `frozenset`
+* mutable: `list`, arrays (Array data structures need to be imported via NumPy package or array module, so arrays are not actually built-ins), `dict`, `set`, [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray)
+* immutable: [`tuple`](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences), [`int`, `float`, `complex`](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex), [`NoneType`](https://www.pythontutorial.net/advanced-python/python-none/) (`None` is a special object of the `NoneType` class), `bool`, `str`, `frozenset`, [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes), [`range`](https://docs.python.org/3/library/stdtypes.html#range)
 
 [lists vs arrays](https://learnpython.com/blog/python-array-vs-list/)
 
