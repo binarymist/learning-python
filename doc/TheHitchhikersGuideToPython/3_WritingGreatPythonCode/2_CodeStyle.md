@@ -9,6 +9,20 @@ Python vs JavaScript:
 
 ## [General concepts](https://docs.python-guide.org/writing/style/#general-concepts)
 
+
+
+
+Todo: Discover and doc functional paradigms https://github.com/binarymist/learning-python/blob/main/doc/TheHitchhikersGuideToPython/3_WritingGreatPythonCode/2_CodeStyle.md#swap-for-loops-with-functional-paradigms
+  Currently working through https://realpython.com/python-functional-programming/ .........................................
+Todo: Carry on with https://www.valentinog.com/blog/python-for-js/#regular-expressions-in-python-and-javascript
+
+
+
+Todo: Work through General concepts page
+
+
+
+
 ### [Function arguments](https://docs.python-guide.org/writing/style/#function-arguments)
 
 
@@ -60,9 +74,19 @@ The following sub-sections are personal and not part of "The Hitchhiker's Guide 
 
 ### Swap For loops with Functional Paradigms
 
-Todo: 
+This Stackoverflow post [Why program functionally in Python?](https://stackoverflow.com/questions/1892324/why-program-functionally-in-python) is thought provoking. The accepted answer with examples discusses:
 
-https://stackoverflow.com/questions/1892324/why-program-functionally-in-python
+* "_lambda, even more so map (and filter), and most especially reduce, are hardly ever the right tool for the job in Python_"
+* "_Perfectly proper functional approaches in Python often include list comprehensions, generator expressions, itertools, higher-order functions_"
+* "_itertools, does include imap and ifilter: the difference is that, like all of itertools, these are stream-based (like map and filter builtins in Python 3, but differently from those builtins in Python 2)_"
+* "_So, summarizing...: anything you can code with lambda, map, and filter, you can code (more often than not advantageously) with def (named functions) and listcomps -- and usually moving up one notch to generators, generator expressions, or itertools, is even better_"
+
+Then the comments discuss other techniques, but without examples, so with less weight IMHO.
+
+This [Functional Programming in Python: When and How to Use It](https://realpython.com/python-functional-programming/) is also well worth reading and playing with the examples after reading the above Stackoverflow post. In some cases it shows you how to use map(), filter() and reduce(), but as the Stackoverflow discussion points out, often simpler pythonic approaches are shorter, easier to understand and make more sense.
+ 
+
+
 
 ### Replace If Statements with Dictionary
 
