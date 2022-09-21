@@ -13,7 +13,7 @@ Python vs JavaScript:
 
 
 Todo: Discover and doc functional paradigms https://github.com/binarymist/learning-python/blob/main/doc/TheHitchhikersGuideToPython/3_WritingGreatPythonCode/2_CodeStyle.md#swap-for-loops-with-functional-paradigms
-  Currently working through https://realpython.com/python-functional-programming/ .........................................
+  Currently working through https://realpython.com/python-functional-programming/#applying-a-function-to-an-iterable-with-map .........................................
 Todo: Carry on with https://www.valentinog.com/blog/python-for-js/#regular-expressions-in-python-and-javascript
 
 
@@ -84,7 +84,29 @@ This Stackoverflow post [Why program functionally in Python?](https://stackoverf
 Then the comments discuss other techniques, but without examples, so with less weight IMHO.
 
 This [Functional Programming in Python: When and How to Use It](https://realpython.com/python-functional-programming/) is also well worth reading and playing with the examples after reading the above Stackoverflow post. In some cases it shows you how to use map(), filter() and reduce(), but as the Stackoverflow discussion points out, often simpler pythonic approaches are shorter, easier to understand and make more sense.
- 
+
+An example of [Applying a Function to an Iterable With map()](https://realpython.com/python-functional-programming/#applying-a-function-to-an-iterable-with-map)
+
+```
+>>> "+".join(map(str, [1, 2, 3, 4, 5]))
+'1+2+3+4+5'
+```
+
+and how to do the same thing in a more pythonic way with list comprehension:
+
+```
+>>> "+".join([str(num) for num in [1, 2, 3, 4, 5]])
+'1+2+3+4+5'
+```
+
+
+
+<br>
+
+"Effective Python (2nd Edition)" has:
+
+* Item 27 Use Comprehensions Instead of map and filter
+* Item 36: Consider itertools for Working with Iterators and Generators
 
 
 
@@ -135,5 +157,6 @@ All of the built-in sequence types are detailed [here](https://docs.python.org/3
 #### Other Resources
 
 * [Use Cases for Asterisks](https://betterprogramming.pub/understand-the-versatility-of-asterisks-in-python-know-8-use-cases-722bff20e84c)
+* [Iterables](https://realpython.com/python-for-loop/#iterables)
 
 
