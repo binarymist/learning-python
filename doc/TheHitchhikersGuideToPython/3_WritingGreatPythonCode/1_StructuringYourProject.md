@@ -2,7 +2,7 @@
 
 ## [Object-oriented programming](https://docs.python-guide.org/writing/structure/#object-oriented-programming)
 
-In JavaScript everything exect the following [_primitive_](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)s are objects: `null`, `undefined`, `string`, `number`, `bigint`, `boolean` and `symbol`
+In JavaScript everything except the following [_primitive_](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)s are objects: `null`, `undefined`, `string`, `number`, `bigint`, `boolean` and `symbol`
 
 _In Python, everything is an object_. _Functions, classes, strings, and even types are objects in Python: like any object, they have a type, they can be passed as function arguments, and they may have methods and properties._
 
@@ -59,7 +59,7 @@ _Using properly mutable types for things that are mutable in nature and immutabl
 
 [Built-in types](https://docs.python.org/3/library/stdtypes.html) (unless specified otherwise):
 
-* mutable: `list`, arrays (Array data structures need to be imported via NumPy package or array module, so arrays are not actually built-ins), `dict`, `set`, [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray)
+* mutable: `list`, arrays (Array data structures need to be imported via NumPy package or array module, so arrays are not actually built-ins), `dict`, [`set`](https://docs.python.org/3/tutorial/datastructures.html#sets), [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray)
 * immutable: [`tuple`](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences), [`int`, `float`, `complex`](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex), [`NoneType`](https://www.pythontutorial.net/advanced-python/python-none/) (`None` is a special object of the `NoneType` class), `bool`, `str`, `frozenset`, [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes), [`range`](https://docs.python.org/3/library/stdtypes.html#range)
 
 [lists vs arrays](https://learnpython.com/blog/python-array-vs-list/)
