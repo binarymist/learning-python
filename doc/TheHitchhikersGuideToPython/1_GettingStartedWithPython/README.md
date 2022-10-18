@@ -27,9 +27,9 @@ So we're going to use venv
 
 * doc: https://docs.python.org/3/library/venv.html
 
-Using `python3 -m venv ...` requires python3.8-venv so I installed only python3-venv
+Using `python3 -m venv ...` requires python3.8-venv. On Linux Mint 21 (Vanessa), python3-venv is already installed
 
-* https://www.techcoil.com/blog/how-to-install-python3-venv-on-ubuntu-16-04/
+* For Linux Mint 20.3: https://www.techcoil.com/blog/how-to-install-python3-venv-on-ubuntu-16-04/, For Linux Mint 21 just install python3-venv using Synaptic Package Manager
 * The best usage guide is Effective Python (2nd Edition) - Item 83
 * Create the virtual environment: python3 -m venv .venv
 * Get into the virtual enviroment (activate it): source .venv/bin/activate
