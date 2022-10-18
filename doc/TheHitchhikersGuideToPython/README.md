@@ -5,6 +5,7 @@ Other good books:
 1. Effective Python (2nd Edition)
 2. Python Cookbook
 3. Fluent Python
+4. Python Tricks
 
 * [Getting Started with Python](1_GettingStartedWithPython/README.md)
 * [Python Development Environments](2_PythonDevelopmentEnvironments/README.md)
