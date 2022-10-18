@@ -12,12 +12,6 @@ Python vs JavaScript:
 
 
 
-Todo: Discover and doc functional paradigms https://github.com/binarymist/learning-python/blob/main/doc/TheHitchhikersGuideToPython/3_WritingGreatPythonCode/2_CodeStyle.md#swap-for-loops-with-functional-paradigms
-  Currently working through https://realpython.com/python-functional-programming/#applying-a-function-to-an-iterable-with-map .........................................
-Todo: Carry on with https://www.valentinog.com/blog/python-for-js/#regular-expressions-in-python-and-javascript
-
-
-
 Todo: Work through General concepts page
 
 
@@ -47,7 +41,9 @@ start, end = match.start(), match.end()
 
 * [Tuple Assignment](https://runestone.academy/ns/books/published/thinkcspy/Lists/TupleAssignment.html)
 
+## [Zen of Python](https://docs.python-guide.org/writing/style/#zen-of-python)
 
+Also known as [PEP 20](https://www.python.org/dev/peps/pep-0020), the guiding principles for Python’s design.
 
 ## [PEP 8](https://docs.python-guide.org/writing/style/#pep-8)
 
