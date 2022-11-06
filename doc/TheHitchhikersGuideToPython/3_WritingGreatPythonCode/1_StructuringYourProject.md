@@ -43,7 +43,9 @@ a = 2
 
 Unlike in JavaScript where if you declare and/or define a variable anywhere without using `var`, `let` or `const` it will become global, in Python there is no prefix required and where ever you ~~declare~~ define a variable will be it's scope.
 
-In Python the concept of declaring a variable (for built-in types) before using it doesn't exist, you just define or assign it (ex: `a = 1`). Arrays need to be defined because they are not built-in types, as can be seen in the link below "lists vs arrays".
+In Python the concept of declaring a variable (for built-in types) before using it doesn't exist, you just define it or assign it (ex: `a = 1`). It's not the assignment that creates a new object though. Arrays need to be defined because they are not built-in types, as can be seen in the link below "lists vs arrays".
+
+
 
 A variable which is defined inside a function is local to that function
 
