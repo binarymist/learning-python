@@ -4,29 +4,39 @@ Python vs JavaScript:
 
 [Python for JavaScript Developers](https://www.valentinog.com/blog/python-for-js)
 
-
-
-
 ## [General concepts](https://docs.python-guide.org/writing/style/#general-concepts)
-
-
-
-
-Todo: Work through General concepts page
-
-
-
 
 ### [Function arguments](https://docs.python-guide.org/writing/style/#function-arguments)
 
+**Positional** (mandatory) arguments have no default values.  
+Must be specified before keyword arguments.  
+You can also name the arguments, in which case you can also switch the order if you wanted to.  
+For the following routine signatures:  
+`send(message, recipient)` or `point(x, y)`  
+You could invoke them like:  
+`send(recipient='World', message='Hello')` or `point(y=2, x=1)`
 
+**Keyword** are not mandatory and have default values. Often used for optional parameters sent to the function.  
 
+Think more carefully about using either of the following two argument techniques:
 
-#### Other Resources
+**Arbitrary argument list** (`*args`)  
+Optional positional arguments are always turned into a tuple before they are passed to the function.  
+Effective Python - Item 22 calls these Variable (optional) Positional Arguments.  
 
-[Built-in Functions](https://docs.python.org/3/library/functions.html)
+**Arbitrary keyword argument dictionary** (`**kwargs`)  
+In the function body, kwargs will be a dictionary of all the passed named arguments that have not been caught by other keyword arguments in the function signature.  
+Effective Python - Item 23 discusses keyword arguments.
 
-## Idioms
+### Avoid the magical wand
+
+### We are all responsible users
+
+The main convention for private properties and implementation details is to prefix all “internals” with an underscore.
+
+### Returning values
+
+## [Idioms](https://docs.python-guide.org/writing/style/#idioms)
 
 ### Unpacking
 
@@ -40,6 +50,98 @@ start, end = match.start(), match.end()
 ```
 
 * [Tuple Assignment](https://runestone.academy/ns/books/published/thinkcspy/Lists/TupleAssignment.html)
+
+"Python for JavaScript Developers" has some other unpacking examples, such as:
+
+* `dict` unpacking which is similar to JavaScript spread
+* Union operator for dictionaries
+
+### [Create an ignored variable](https://docs.python-guide.org/writing/style/#create-an-ignored-variable)
+
+Use double underscore `__` for ignored/throwaway variables.
+
+### Create a length-N list of the same thing
+
+### Create a length-N list of lists
+
+### Searching for an item in a collection
+
+## [PEP8](https://docs.python-guide.org/writing/style/#pep-8)
+
+### Auto-Formatting
+
+Pylint is [configurable](https://pylint.pycqa.org/en/latest/user_guide/configuration/all-options.html). Google has a [Python Style Guide](https://google.github.io/styleguide/pyguide.html), which also uses Pylint, and provides a [pylintrc](https://google.github.io/styleguide/pylintrc) file under the [2.1 Lint subsection](https://google.github.io/styleguide/pyguide.html#s2.1-lint).
+The internal Google style guide mandates 2 spaces. Google's externaly-published style guide says 4, consistent with PEP 8.
+Google's [pylintrc](https://google.github.io/styleguide/pylintrc) uses 2 spaces, for conformity with many open-sourced Google projects (like TensorFlow).
+
+## [Conventions](https://docs.python-guide.org/writing/style/#conventions)
+
+### [Check if a variable equals a constant](https://docs.python-guide.org/writing/style/#check-if-a-variable-equals-a-constant)
+
+[Truth Value Testing](https://docs.python.org/3/library/stdtypes.html#truth-value-testing)
+
+```python
+# Just check the value
+if attr:
+    print('attr is truthy!')
+
+# or check for the opposite
+if not attr:
+    print('attr is falsey!')
+
+# or, since None is considered false, explicitly check for it
+if attr is None:
+    print('attr is None!')
+```
+
+### [Access a Dictionary Element](https://docs.python-guide.org/writing/style/#access-a-dictionary-element)
+
+```python
+d = {'hello': 'world'}
+
+# Bad
+if d.has_key('hello'):
+    print(d['hello'])    # prints 'world'
+else:
+    print('default_value')
+    
+# Good
+print(d.get('hello', 'default_value')) # prints 'world'
+print(d.get('thingy', 'default_value')) # prints 'default_value'
+
+# Or:
+if 'hello' in d:
+    print(d['hello'])
+```
+
+### [Short Ways to Manipulate Lists](https://docs.python-guide.org/writing/style/#short-ways-to-manipulate-lists)
+
+### [Filtering a list](https://docs.python-guide.org/writing/style/#filtering-a-list)
+
+Use a list comprehension or generator expression.
+
+[List comprehensions](http://docs.python.org/tutorial/datastructures.html#list-comprehensions) provides a powerful, concise way to work with lists.
+
+[Generator expressions](http://docs.python.org/tutorial/datastructures.html#list-comprehensions) follows almost the same syntax as list comprehensions but return a generator instead of a list.
+
+```python
+# comprehensions create a new list object
+filtered_values = [value for value in sequence if value != x]
+
+# generators don't create another list
+filtered_values = (value for value in sequence if value != x)
+```
+
+### [Modifying the values in a list](https://docs.python-guide.org/writing/style/#modifying-the-values-in-a-list)
+
+### [Read From a File](https://docs.python-guide.org/writing/style/#read-from-a-file)
+
+### [Line Continuations](https://docs.python-guide.org/writing/style/#line-continuations)
+
+* Not so good: **Backslash** (`\`) at the end of the line without any horizontal white space (` `) following it
+* Better: Use **parentheses** around your elements. Left with an unclosed parenthesis on an end-of-line, the Python interpreter will join the next line until the parentheses are closed. The same behaviour holds for curly and square braces
+
+Having to split a long logical line is usually a sign that you are trying to do too many things at the same time.
 
 ## [Zen of Python](https://docs.python-guide.org/writing/style/#zen-of-python)
 
@@ -55,25 +157,20 @@ Also known as [PEP 20](https://www.python.org/dev/peps/pep-0020), the guiding pr
 ## [Conventions](https://docs.python-guide.org/writing/style/#conventions)
 
 
-
-
-
-
-
-
-
-
-
 ## Personal
 
 The following sub-sections are personal and not part of "The Hitchhiker's Guide to Python".
+
+### Other Resources
+
+[Built-in Functions](https://docs.python.org/3/library/functions.html)
 
 ### Swap For loops with Functional Paradigms
 
 This Stackoverflow post [Why program functionally in Python?](https://stackoverflow.com/questions/1892324/why-program-functionally-in-python) is thought provoking. The accepted answer with examples discusses:
 
 * "_lambda, even more so map (and filter), and most especially reduce, are hardly ever the right tool for the job in Python_"
-* "_Perfectly proper functional approaches in Python often include list comprehensions, generator expressions, itertools, higher-order functions_"
+* "_Perfectly proper functional approaches in Python often include [list comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions), [generator expressions](https://docs.python.org/3/tutorial/classes.html#generator-expressions)_" (follows almost the same syntax as list comprehensions but return a generator instead of a list), "_itertools, higher-order functions_"
 * "_itertools, does include imap and ifilter: the difference is that, like all of itertools, these are stream-based (like map and filter builtins in Python 3, but differently from those builtins in Python 2)_"
 * "_So, summarizing...: anything you can code with lambda, map, and filter, you can code (more often than not advantageously) with def (named functions) and listcomps -- and usually moving up one notch to generators, generator expressions, or itertools, is even better_"
 
@@ -94,8 +191,6 @@ and how to do the same thing in a more pythonic way with list comprehension:
 >>> "+".join([str(num) for num in [1, 2, 3, 4, 5]])
 '1+2+3+4+5'
 ```
-
-
 
 <br>
 
@@ -154,5 +249,3 @@ All of the built-in sequence types are detailed [here](https://docs.python.org/3
 
 * [Use Cases for Asterisks](https://betterprogramming.pub/understand-the-versatility-of-asterisks-in-python-know-8-use-cases-722bff20e84c)
 * [Iterables](https://realpython.com/python-for-loop/#iterables)
-
-
