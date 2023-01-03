@@ -17,6 +17,7 @@ You could invoke them like:
 `send(recipient='World', message='Hello')` or `point(y=2, x=1)`
 
 **Keyword** are not mandatory and have default values. Often used for optional parameters sent to the function.  
+Beware of the using default arguments that are mutable [gotcha](./7_CommonGotchas.md#mutable-default-arguments).
 
 Think more carefully about using either of the following two argument techniques:
 

@@ -16,4 +16,4 @@ Other good books:
   * [Testing Your Code](3_WritingGreatPythonCode/5_TestingYourCode.md)
   * [Logging](3_WritingGreatPythonCode/6_Logging.md)
   * [Common Gotchas](3_WritingGreatPythonCode/7_CommonGotchas.md)
-
+* [Scenario Guide for Python Applications](4_ScenarioGuideForPythonApplications/README.md)
