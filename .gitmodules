@@ -1,0 +1,3 @@
+[submodule "example-code/effectivepython"]
+	path = example-code/effectivepython
+	url = https://github.com/bslatkin/effectivepython
