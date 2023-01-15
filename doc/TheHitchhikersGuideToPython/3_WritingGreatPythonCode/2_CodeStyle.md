@@ -69,6 +69,18 @@ Use double underscore `__` for ignored/throwaway variables.
 
 ## [PEP8](https://docs.python-guide.org/writing/style/#pep-8)
 
+* PEP 8 is the de facto code style guide for Python
+* pep8.org is the easier to read PEP 8 style guide for Python
+
+Linting tools:
+
+* Pylint
+* Flake8
+* mypy
+* pycodestyle (pep8)
+
+[Setting up linting in VS Code](https://code.visualstudio.com/docs/python/linting)
+
 ### Auto-Formatting
 
 Pylint is [configurable](https://pylint.pycqa.org/en/latest/user_guide/configuration/all-options.html). Google has a [Python Style Guide](https://google.github.io/styleguide/pyguide.html), which also uses Pylint, and provides a [pylintrc](https://google.github.io/styleguide/pylintrc) file under the [2.1 Lint subsection](https://google.github.io/styleguide/pyguide.html#s2.1-lint).
